@@ -7,11 +7,11 @@ export interface Currency {
   label: string;
 }
 
-const CurrensyForm = () => {
+const CurrensyForm: React.FC = () => {
   const [currencyOptions, setCurrencyOptions] = useState<Currency[]>([]);
-  const [rate, setRate] = useState(1);
-  const [from, setFrom] = useState("USD");
-  const [to, setTo] = useState("USD");
+  const [rate, setRate] = useState<number>(1);
+  const [from, setFrom] = useState<string>("USD");
+  const [to, setTo] = useState<string>("USD");
   const [amountFrom, setAmountFrom] = useState<number>(0);
   const [amountTo, setAmountTo] = useState<number>(amountFrom * rate);
 

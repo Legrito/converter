@@ -10,7 +10,7 @@ interface Props {
   options: Currency[];
 }
 
-const CurrencyFormField = ({
+const CurrencyFormField: React.FC<Props> = ({
   id,
   label,
   amount,
